@@ -26,9 +26,6 @@ export default function DetailsPage(): ReactElement {
 		return <Navigate to='/' replace />
 	}
 
-	const testVariable = 5;
-	console.log(testVariable);
-
 	const imageWidth =
 		(isTabletAndUp
 			? window.innerWidth * DESKTOP_IMAGE_WIDTH_PERCENTAGE
