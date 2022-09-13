@@ -38,7 +38,7 @@ pnpm install
 - [ ] If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
 - [ ] Change the title, description and theme color in the `index.html` and `vite.config.ts`. The [Inter](https://rsms.me/inter/) font is included, so remove it if you want.
 - [ ] Modify or delete the `LICENSE` file.
-- [ ] Change the `name` field in package.json.
+- [x] Change the `name` field in package.json.
 
 ## Scripts
 
