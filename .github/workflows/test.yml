@@ -27,6 +27,10 @@ jobs:
 
       - name: Validate
         run: pnpm run-p lint test:ci
+
+      - name: Create new Semantic Version
+        uses: zwaldowski/semver-release-action@v3
+
         # env:
         #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
