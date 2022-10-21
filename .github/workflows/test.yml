@@ -28,15 +28,6 @@ jobs:
       - name: Validate
         run: pnpm run-p lint test:ci
 
-      - id: bump
-        uses: zwaldowski/match-label-action@v4
-        with:
-          allowed: major,minor,patch
-      - uses: zwaldowski/semver-release-action@v3
-        with:
-          bump: ${{ steps.bump.outputs.match }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
         # env:
         #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
